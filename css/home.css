@@ -1,0 +1,120 @@
+* { margin: 0; padding: 0;}
+
+:root { 
+   --primary: rgba(32, 23, 222, 1); 
+   --secondary: rgba(10, 110, 80, 1);
+   --thirdary: rgb(236, 175, 83);
+   --mainback: rgba(197, 233, 202, 0.6);
+   --nextback: rgb(69, 201, 241, 0.6);
+   --shadow: 10px, 5px rgb(198, 25, 233);
+}
+
+body {background-image: url(../river.jpg); font-family: cursive; background-repeat: no-repeat; background-size: inherit;}
+
+.sagaTitle {margin-top: 20px; margin-left: 20px; margin-right: 20px; margin-bottom: 20px; text-align: center; background-color: var(--mainback); border-radius: 5px;}
+
+.sagaTitle h1 {font-size: 40px; color: var(--primary);}
+
+.mainGrid {
+   display: grid;
+   gap: 20px;
+   grid-template-columns: 1fr 1fr 1fr;
+   text-align: center;
+   color: var(--secondary);
+   margin-top: 20px; margin-left: 20px; margin-right: 20px; margin-bottom: 20px;
+}
+
+.mainGrid a {
+   background-color: var(--nextback);
+   text-decoration: none;
+   color: var(--thirdary);
+   padding-left: 10%;
+   padding-right: 10%;
+   padding-top: 20%;
+   padding-bottom: 20%;
+   box-sizing: border-box;
+   box-shadow: var(--shadow);
+   border-radius: 5px;
+}
+
+.mainGrid a:hover {
+   background-color: var(--mainback);
+   color: var(--primary);
+   transition: 800ms;
+
+}
+
+.secondSection {
+   margin-top: 20px; margin-left: 20px; margin-right: 20px; margin-bottom: 20px;
+   display: grid;
+   gap: 20px;
+   grid-template-areas: 
+   'boxa boxb boxc boxd boxe'
+   'boxf boxg boxh boxi boxj';
+   
+}
+
+.secondSection a {
+   text-decoration: none;
+   color: var(--primary);
+   box-sizing: border-box;
+   background-color: var(--mainback);
+   padding-left: 10%;
+   padding-right: 10%;
+   padding-top: 20%;
+   padding-bottom: 20%;
+   border-radius: 5px;
+   box-shadow: var(--shadow);
+}
+
+.secondSection a:hover {
+   color: var(--thirdary);
+   background-color: var(--nextback);
+   transition: 800ms;
+}
+
+.secondSection a h3 { font-size: 20px; text-align: center;}
+
+.footer {
+   min-height: 60px;
+   background-color: var(--mainback);
+   text-align: center;
+   margin-top: 20px; margin-left: 20px; margin-right: 20px; margin-bottom: 20px;
+   border-radius: 5px;
+   padding-top: 10px;
+   color: var(--secondary);
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
+@media (max-width: 600px) {
+   .secondSection {grid-template-areas: 
+      'boxa'
+      'boxb'
+      'boxc'
+      'boxd'
+      'boxe'
+      'boxf'
+      'boxg'
+      'boxh'
+      'boxi'
+      'boxj';
+} 
+    }
+
+@media (max-width: 600px) {
+   .secondSection a {
+      padding-left: 3%;
+      padding-right: 3%;
+      padding-top: 2%;
+      padding-bottom: 2%;}
+
+      .secondSection a h3 {
+         font-size: 17px;
+      }
+
+   .mainGrid a h2 {
+      font-size: 20px;
+   }
+   
+}
