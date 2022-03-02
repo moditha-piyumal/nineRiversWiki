@@ -1,0 +1,101 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background-image: url('girl.jpg');
+   background-repeat: no-repeat;
+   background-position: top 10% left 20%;
+}
+
+.links {
+   display: grid;
+   gap: 15px;
+   grid-template-columns: 1fr 5fr 5fr 5fr;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   padding-left: 10px;
+   padding-right: 10px;
+   background-color: #2d132c;
+   color: #ee4540;
+   height: 6vh;
+}
+
+.link {
+   box-sizing: border-box;
+   border-radius: 5px;
+   border: solid #801336 2px;
+   padding: 2%;
+   text-align: center;
+   justify-content: center;
+   padding-top: 10px;
+   font-family:Arial, Helvetica, sans-serif;
+   font-weight: bold;
+}
+
+.link:hover {
+   border: #2d132c solid 2px;
+   background-color: #ee4540;
+   color: #2d132c;
+
+}
+
+.xxx {
+   background-color: #2d132c;
+   margin-top: 100px;
+   margin-left: 100px;
+   margin-right: 100px;
+}
+
+.bottomBar {
+   padding: 10px 10px 10px 10px;
+   color: #ee4540;
+   background-color: #2d132c;
+   position: absolute;
+   bottom: 0;
+   text-align: center;
+   font-family:Arial, Helvetica, sans-serif;
+   height: 6vh;
+}
+
+.wrap {
+   box-sizing: border-box;
+   border: #2d132c solid 2px;
+   background-color: rgba(132, 11, 156, 0.3);
+   text-align: center;
+   align-items: center;
+   color: rgb(245, 236, 229);
+   font-size: 20px;
+   font-weight: bold;
+   width: 22vw;
+   padding-left: 1vw;
+   padding-right: 1vw;
+   padding-top: 3vh;
+   padding-bottom: 3vh;
+   margin-top: 2vh;
+   margin-bottom: 2vh;
+   border-radius: 10px;
+   height: 75vh;
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+.wrap img {
+   width: 20vw;
+}
+.wrap:hover {
+   background-color: rgba(182, 37, 11, 0.8);
+   color: #2d132c;
+}
+.box {
+   text-decoration: none;
+}
+.mainGrid {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 2vw;
+   margin-left: 2vw;
+   margin-right: 2vw;
+}
+
+
