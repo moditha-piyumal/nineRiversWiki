@@ -1,0 +1,154 @@
+* {
+   padding: 0;
+   margin: 0;
+
+}
+body {
+   background-color: black;
+   color: greenyellow;
+   margin: 0%;
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+.container {
+   margin: 0%;
+   background-color: rgba(22, 111, 112, 0.5);
+   padding: 0%;
+   position: relative;
+   border-radius: 10px;
+}
+
+/* Downloaded css template codes below. They are marked at the end of each with a number as 1,2,and 3 */
+
+
+
+
+.custom-shape-divider-bottom-1646911531 {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   overflow: hidden;
+   line-height: 0;
+   transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1646911531 svg {
+   position: relative;
+   display: block;
+   width: calc(100% + 1.3px);
+   height: 104px;
+}
+
+.custom-shape-divider-bottom-1646911531 .shape-fill {
+   fill: #444;
+}
+
+/* 1 */
+
+.custom-shape-divider-bottom-1646913006 {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   overflow: hidden;
+   line-height: 0;
+   transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1646913006 svg {
+   position: relative;
+   display: block;
+   width: calc(100% + 1.3px);
+   height: 133px;
+}
+
+.custom-shape-divider-bottom-1646913006 .shape-fill {
+   fill: #0D4122;
+}
+
+/* 2 */
+
+
+.custom-shape-divider-bottom-1646913193 {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   overflow: hidden;
+   line-height: 0;
+   transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1646913193 svg {
+   position: relative;
+   display: block;
+   width: calc(100% + 1.3px);
+   height: 75px;
+}
+
+.custom-shape-divider-bottom-1646913193 .shape-fill {
+   fill: #0D4122;
+}
+
+/* 3 */
+
+.custom-shape-divider-bottom-1646913920 {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   overflow: hidden;
+   line-height: 0;
+   transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1646913920 svg {
+   position: relative;
+   display: block;
+   width: calc(100% + 1.3px);
+   height: 96px;
+}
+
+.custom-shape-divider-bottom-1646913920 .shape-fill {
+   fill: #000;
+}
+
+
+/* 4 */
+
+.division {
+   position: relative;
+   padding-bottom: 140px;
+   background-color: #444;
+   padding-left: 10vw;
+   padding-right: 10vw;
+}
+
+.div_2 {
+   background-color: #0d4122;
+} 
+.div_4 {
+   background-color: #0d4122;
+} 
+.div_6 {
+   background-color: #0d4122;
+} 
+.div_8 {
+   background-color: #0d4122;
+} 
+.div_10 {
+   background-color: #0d4122;
+} 
+.div_12 {
+   background-color: #0d4122;
+} 
+
+footer {
+   margin-left: 20vw;
+   margin-right: 20vw;
+   margin-top: 5vh;
+   margin-bottom: 5vh;
+   color: antiquewhite;
+
+}
