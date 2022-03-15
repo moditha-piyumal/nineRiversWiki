@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Iskandia</title>
+   <style>
+      .container {
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         margin-top: 5vh;
+         margin-bottom: 5vh;
+         margin-left: 10vh;
+         margin-right: 10vh;
+         background-image: url(css/iskandia.jpg);
+         background-position: center;
+         background-size: cover;
+         min-height: 600px;
+         min-width: 200px;
+         gap: 50px;
+         padding: 50px;
+
+      }
+
+      .card {
+         min-width: 10vw;
+         min-height: 30vh;
+         background-color: rgba(238, 94, 130, 0.7);
+         box-shadow: 0 20px 20px ;
+         border-radius: 10%;
+         box-sizing: border-box;
+         border: solid 2px rgba(83, 128, 71, 0.8);
+         padding: 5px;
+         
+      }
+      .card h1 {
+         font-size: 18px;
+         text-align: center;
+         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+      .card p {
+         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+
+      @media (max-width: 700px) {
+         .container {
+            grid-template-columns: 1fr;
+         }
+      }
+      
+   </style>
+   
+</head>
+<body>
+
+   <div class="container">
+      <div class="card card1" data-tilt data-tilt-reverse="true">
+         <h1>Cleanliness</h1>
+         <p>Iskandia is a very clean city and it is famous for perfumed streets. Although the streets are not sprayed with perfumes of any kind, the smell of feaces and rotting food completely evades the city. The city has an underground sewage system which sends sewage and waste from the city into the sea. There are few other cities with such a waste disposal system, but, those are far too smaller than Iskandia.</p>
+      </div>
+      <div class="card card2" data-tilt data-tilt-reverse="true">
+
+      </div>
+      <div class="card card3" data-tilt data-tilt-reverse="true">
+
+      </div>
+      <div class="card card4" data-tilt data-tilt-reverse="true">
+
+      </div>
+      <div class="card card5" data-tilt data-tilt-reverse="true">
+
+      </div>
+      <div class="card card6" data-tilt data-tilt-reverse="true">
+
+      </div>
+   </div>
+
+
+
+
+   <script type="text/javascript" src="vanilla-tilt.js"></script>
+</body>
+</html>
