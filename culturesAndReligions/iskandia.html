@@ -43,6 +43,25 @@
          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
       }
 
+      .bigcontainer {
+         background-color: royalblue;
+         padding: 200px;
+      }
+      .photocard {
+         background-size: cover;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         padding: 20px;
+         background-image: url('css/city.jpg');
+         height: 70vh;
+         border: solid 5px rosybrown;
+         border-radius: 10%;
+         box-shadow: 0 25px 20px;
+
+      }
+      
+
       @media (max-width: 700px) {
          .container {
             grid-template-columns: 1fr;
@@ -73,6 +92,12 @@
       </div>
       <div class="card card6" data-tilt data-tilt-reverse="true">
 
+      </div>
+   </div>
+
+   <div class="bigcontainer">
+      <div class="photocard" data-tilt>
+         <!-- <img src="css/city.jpg"> -->
       </div>
    </div>
 
