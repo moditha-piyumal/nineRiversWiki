@@ -66,15 +66,48 @@ body {
 }
 .rightTwo {
    background-color: #260980;
+   position: relative;
 }
 .fourTier {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
+   gap: 2vw;
+   padding-top: 4vh;
+   padding-left: 6vw;
+   padding-right: 5vw;
+   padding-bottom: 5vh;
+   
+   
+   
 }
 .fiveTier {
-   background-color: aqua;
+   background-color: #f6ffd2;
    border-radius: 50%;
-   height: 15vh;
-   width: 15vw;
-   border: solid 2px chocolate;
+   height: 150px;
+   width: 150px;
+   border: solid 2px #260980;
+   color: #3aa3c1;
+   display: grid;
+   place-content: center;
+   font-size: 21px;
+   text-decoration: none;
+   transition-duration: 500ms;
+   
+}
+.fiveTier:hover {
+   background-color: #3aa3c1;
+   color: #260980;
+}
+/* #260980 -- #283996 -- #3aa3c1 -- #f6ffd2 */
+
+.slide {
+   width: 60vw;
+   height: 30vh;
+   background-color: #f6ffd2;
+   color: #283996;
+   position: absolute;
+   left: 2.5vw;
+   top: 1vh;
+   overflow-y: scroll;
+   padding: 5px;
 }
