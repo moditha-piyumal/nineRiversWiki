@@ -7,13 +7,347 @@
   <title>Mari</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+
+<!-- The following is the tailwind color scheme that you must use -->
+<!-- Violet-600 , Rose-400 , Amber-200 , Amber-500 -->
+<!-- The following should be the text colors Black and Amber-200 -->
+<body class="max-w-screen-2xl mx-auto">
+
+  <div class="bg-gradient-to-r from-amber-200 to-amber-500 hover:bg-gradient-to-r hover:from-amber-500 hover:to-amber-200" id="wrapper">
+    <!-- This is a wrapper. Everything will be placed inside this. All the grids and photos come within this. -->
+
+    <nav class="mx-auto p-4 bg-amber-200">
+      <div class="container mx-auto flex flex-col-4 justify-between"> 
+        <!-- items-center -->
+
+        <a href="#" class="
+        focus:outline-none 
+        focus-visible:ring-4 
+        ring-violet-600 
+        rounded-sm 
+        ring-offset-4 
+        ring-offset-amber-200 
+        
+        md:absolute
+        md:left-1/7 
+        md:-translate-x-1/7
+        md:top-9
+        z-10 
+        lg:top-4
+        
+        hover:opacity-30 
+        transition-opacity
+        
+        ">
+          <img src="img/swordmari.png" class="w-36 md:w-48 lg:w-72" alt="Sword of Mari">
+        </a>
+        <!-- Sword Icon -->
+
+
+        
 
 
 
-   <!-- Religion of Mari is the Religion of the Normians and I am making this page with pure Tailwind. The last time I used Tailwind, it worked nicely. I am going to do something fancy this time. -->
 
-   <!-- Colors of the theme are  Red-500 Amber-600 Green-700 Teal-500 -->
+        <button id="menuButton" class="
+        md:hidden
+        z-11
+        
+        focus:outline-none 
+        focus-visible:ring-4 
+        ring-violet-600 
+        rounded-sm 
+        ring-offset-4 
+        ring-offset-amber-200
+        
+        hover:opacity-30 
+        transition-opacity
+        
+        ">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M7 11.5V14m0-2.5v-6a1.5 1.5 0 113 0m-3 6a1.5 1.5 0 00-3 0v2a7.5 7.5 0 0015 0v-5a1.5 1.5 0 00-3 0m-6-3V11m0-5.5v-1a1.5 1.5 0 013 0v1m0 0V11m0-5.5a1.5 1.5 0 013 0v3m0 0V11" />
+          </svg>
+          <!-- This was copied from heroicons -->
+          <!-- Expanding Button -->
+
+        </button>
+
+        <div class="flex flex-col gap-4 right-0 left-0 top-16 bg-amber-200 shadow-xl text-center text-lg p-6 absolute 
+        
+        md:flex md:flex-row md:static md:shadow-none justify-between md:w-full 
+        
+        lg:gap-x-16 
+        xl-gap-x-20 
+        hidden
+        ">
+
+          <a class="btn
+        
+        hover:opacity-30 
+        transition-opacity
+        
+        border-2
+        border-rose-400 
+        rounded-lg 
+        py-2 
+        px-3 
+        shadow-xl 
+        
+        
+        md:ml-auto
+        
+        ">
+          Normanian Tribe
+
+        </a>
+        <a class="btn
+        
+        hover:opacity-30 
+        transition-opacity
+        
+        border-2
+        border-rose-400 
+        rounded-lg 
+        py-2 
+        px-3 
+        shadow-xl">
+          Sheethlok Cultures
+
+        </a>
+        <!-- Special Home Link -->
+        <a class="btn
+        
+        hover:opacity-30 
+        transition-opacity
+        
+        bg-violet-600
+        border-2
+        border-rose-400 
+        text-amber-200 
+        rounded-lg 
+        py-2 
+        px-3 
+        shadow-xl">
+          Sheethlok Cultures
+
+        </a>
+        </div>
+
+      </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+ 
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-6 justify-items-stretch gap-x-5 gap-y-5">
+      <div class="h-20 bg-violet-600">Something</div>
+      <div class="h-20 bg-violet-600">Something</div>
+      <div class="h-20 bg-violet-600">Something</div>
+      <div class="h-20 bg-violet-600">Something</div>
+      <div class="h-20 bg-violet-600">Something</div>
+      <div class="h-20 bg-violet-600">Something</div>
+    </div> -->
+
+    <!-- <div class="grid grid-cols-4 gap-6 justify-items-stretch items-center px-4 py-4">
+      <div class="col-span-2 bg-violet-600 h-36 border-2 border-red-400">xxx</div>
+      <div class="bg-violet-600 h-36 border-2 border-red-400">xxx</div>
+      <div class="bg-violet-600 h-36 border-2 border-red-400">xxx</div>
+      <div class="col-span-3 bg-violet-600 h-36 border-2 border-red-400">xxx</div>
+      <div class="bg-violet-600 h-36 border-2 border-red-400">xxx</div>
+      
+
+    </div> -->
+
+    
+
+    
+
+
+    
+
+
+
+
+
+
+  </div>
+
+  <section class="bg-gradient-to-b from-amber-200 to-amber-500 grid grid-rows-2 md:grid-cols-2 lg:grid-cols-2 h-[62rem] sm:h-[55rem] md:h-[45rem] lg:h-[39rem]">
+
+    <img src="img/rockMari.png" alt="rockmari" class="w-full center sm:opacity-30 md:opacity-100">
+    <div class="w-full p-4">
+      <h1 class="mx-auto text-4xl">
+        The Worship of Mari
+      </h1>
+      <h3 class="mx-auto text-lg text-justify">
+        The Normanians worship Godess Mari. She is reputed to be a Goddess residing within a huge rock which is located a dry region of the continent. She is a Godess of Fertility, Hunting and Rain.
+      </h3>
+      <p class="mx-auto text-justify">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, quaerat eos consequuntur officiis blanditiis voluptatem ducimus, atque sequi reprehenderit quibusdam fugit quia aperiam deleniti in? Debitis, culpa, consectetur soluta quisquam esse enim voluptate asperiores officiis repudiandae a molestias. Ratione sunt beatae autem eaque odit, quam eos, magnam atque porro doloribus perspiciatis iste harum unde dolores, animi excepturi? Nam corrupti ullam quasi facilis laboriosam impedit dolor, commodi consequatur expedita dolores, ratione numquam eligendi totam fugiat! Rem nulla nostrum placeat ex. Amet in deleniti explicabo ab voluptatem facilis modi cum, nulla aut reprehenderit perferendis iure suscipit commodi vero asperiores rem alias sed.
+      </p>
+      <p class="mx-auto text-justify hidden xl:block">
+        XXXXXXXorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla et facere ad incidunt qui sapiente voluptas sed vero velit modi odio neque, saepe nisi sunt. Voluptatum, exercitationem? Modi quia quaerat voluptates iusto recusandae dolorum id animi magni deleniti? In possimus iusto distinctio tempora odio velit laborum, nemo ea tenetur beatae ipsam numquam cum magni molestiae iste? Consequatur quidem, cumque, atque voluptates, non facilis vero minus consequuntur natus provident rationeXXXXXXX
+        Lorem ipsum do
+      </p>
+
+    </div>
+    
+
+  </section>
+
+
+  <!-- The following part is the big grid which can give you all the details you need to know about the Goddess Mari and her followers. -->
+
+
+  <section class="bg-gradient-to-b from-amber-500 to-amber-200 h-max grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-4 py-6">
+
+
+
+    <div class="border-4 rounded-lg border-rose-400 text-center text-amber-200 p-2 bg-gradient-to-b from-rose-500 to-violet-600 hidden sm:grid sm:invisible">
+      <!-- Hidden at 1 and Grid after -->
+
+
+
+      <h2 class="text-lg">11111</h2>
+      <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, nemo! Sed voluptatibus ratione atque distinctio consequatur et? Velit, magnam inventore.</p>
+    </div>
+
+
+    <div class="border-4 rounded-lg border-rose-400 text-center text-amber-200 p-2 bg-gradient-to-b from-rose-500 to-violet-600">
+
+
+
+      <h2 class="text-lg">222222onsequatur, soluta.</h2>
+      <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, nemo! Sed voluptatibus ratione atque distinctio consequatur et? Velit, magnafdsfsdsdf fff ff erew wweweer rytrtym inventore. sdgfsdf sdfdsf sdfsd fgfdg dfgdf dfgdfg dfrretertf</p>
+    </div>
+
+
+    <div class="border-4 rounded-lg border-rose-400 text-center text-amber-200 p-2 bg-gradient-to-b from-rose-500 to-violet-600 hidden sm:grid lg:invisible">
+      <!-- Hidden at 1 and Grid after -->
+
+
+
+
+      <h2 class="text-lg">333333Consequatur, soluta.</h2>
+      <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, nemo! Sed voluptatibus ratione atque distinctio consequatur et? Velit, magnam inventore.</p>
+    </div>
+
+
+    <div class="border-4 rounded-lg border-rose-400 text-center text-amber-200 p-2 bg-gradient-to-b from-rose-500 to-violet-600">
+
+
+
+
+      <h2 class="text-lg">444444444444ing elit. Consequatur, soluta.</h2>
+      <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, nemo! Sed voluptatibus ratione atque distinctio consequatur et? Velit, magnam inventore.</p>
+    </div>
+
+
+    <div class="border-4 rounded-lg border-rose-400 text-center text-amber-200 p-2 bg-gradient-to-b from-rose-500 to-violet-600">
+
+
+
+      <h2 class="text-lg">55555555555it. Consequatur, soluta.</h2>
+      <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, nemo! Sed voluptatibus ratione atque distinctio consequatur et? Velit, magnam inventore.</p>
+    </div>
+
+
+    <div class="border-4 rounded-lg border-rose-400 text-center text-amber-200 p-2 bg-gradient-to-b from-rose-500 to-violet-600 hidden sm:grid lg:invisible">
+      <!-- Hidden at 1 and Grid after -->
+
+
+
+
+      <h2 class="text-lg">666666666666xxxxx xxxxx xxx xxxxxxxxx xx xx xxxx xx Consequatur, soluta.</h2>
+      <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, nemo! Sed voluptatibus ratione atque distinctio consequatur et? Velit, magnam inventore.</p>
+    </div>
+
+
+    <div class="border-4 rounded-lg border-rose-400 text-center text-amber-200 p-2 bg-gradient-to-b from-rose-500 to-violet-600">
+
+
+
+      <h2 class="text-lg">777777777777dolor sit, amet consectetur adipisicing elit. Consequatur, soluta.</h2>
+      <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, nemo! Sed voluptatibus ratione atque distinctio consequatur et? Velit, magnam inventore.</p>
+    </div>
+
+
+    <div class="border-4 rounded-lg border-rose-400 text-center text-amber-200 p-2 bg-gradient-to-b from-rose-500 to-violet-600 hidden sm:grid md:invisible">
+
+
+
+      <h2 class="text-lg">88888psum dolor sit, amet consectetur adipisicing elit. Consequatur, soluta.</h2>
+      <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, nemo! Sed voluptatibus ratione atque distinctio consequatur et? Velit, magnam inventore.</p>
+    </div>
+
+
+    <div class="border-4 rounded-lg border-rose-400 text-center text-amber-200 p-2 bg-gradient-to-b from-rose-500 to-violet-600 hidden sm:grid sm:invisible">
+      <!-- Hidden at 1 and Grid after -->
+
+
+
+
+      <h2 class="text-lg">999999999sum dolor sit, amet consectetur adipisicing elit. Consequatur, soluta.</h2>
+      <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, nemo! Sed voluptatibus ratione atque distinctio consequatur et? Velit, magnam inventore.</p>
+    </div>
+
+
+    <div class="border-4 rounded-lg border-rose-400 text-center text-amber-200 p-2 bg-gradient-to-b from-rose-500 to-violet-600">
+
+
+
+      <h2 class="text-lg">10101010101010sum dolor sit, amet consectetur adipisicing elit. Consequatur, soluta.</h2>
+      <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, nemo! Sed voluptatibus ratione atque distinctio consequatur et? Velit, magnam inventore.</p>
+    </div>
+
+
+    <div class="border-4 rounded-lg border-rose-400 text-center text-amber-200 p-2 bg-gradient-to-b from-rose-500 to-violet-600 hidden sm:grid lg:invisible">
+
+
+
+      <h2 class="text-lg">111111111111um dolor sit, amet consectetur adipisicing elit. Consequatur, soluta.</h2>
+      <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, nemo! Sed voluptatibus ratione atque distinctio consequatur et? Velit, magnam inventore.</p>
+    </div>
+
+
+    <div class="border-4 rounded-lg border-rose-400 text-center text-amber-200 p-2 bg-gradient-to-b from-rose-500 to-violet-600">
+
+
+
+      <h2 class="text-lg">1212121212121212 dolor sit, amet consectetur adipisicing elit. Consequatur, soluta.</h2>
+      <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, nemo! Sed voluptatibus ratione atque distinctio consequatur et? Velit, magnam inventore.</p>
+    </div>
+
+  </section>
+
+  <div class="bg-amber-200 h-20"></div>
+  <!-- This is just a spacing div -->
+
+  <section class="bg-gradient-to-b from-amber-200 to-rose-400 h-96 pt-8"></section>
+
+
+  
 
    
 </body>
