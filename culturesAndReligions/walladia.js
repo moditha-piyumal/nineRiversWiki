@@ -1,10 +1,10 @@
 // This is the javascript for walladia's section where things move in.
 
-var tween = gsap.to(".red", {
+var tween = gsap.to(".joonistpara", {
    duration: 4, 
-   x: 750, 
-   rotation: 360, 
-   ease: "none", 
+   x: 1750, 
+   rotation: 0, 
+   ease: "bounce", 
    paused: true
  });
 
