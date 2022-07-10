@@ -7,31 +7,33 @@ var tween = gsap.to(".joonistpara", {
    ease: "bounce", 
    paused: true
  });
+//  Test
 
 
-var tween2 = gsap.to(".green", {
+// Test
+var tween2 = gsap.to(".ukirinpara", {
    duration: 4, 
-   x: 750, 
-   rotation: 360, 
-   ease: "none", 
+   x: 1750, 
+   rotation: 0, 
+   ease: "bounce", 
    paused: true
  });
 
 
-var tween3 = gsap.to(".blue", {
+var tween3 = gsap.to(".lostpara", {
    duration: 4, 
-   x: 750, 
-   rotation: 360, 
-   ease: "none", 
+   x: 1750, 
+   rotation: 0, 
+   ease: "bounce", 
    paused: true
  });
 
 
-var tween4 = gsap.to(".purple", {
+var tween4 = gsap.to(".reservoirpara", {
    duration: 4, 
-   x: 750, 
-   rotation: 360, 
-   ease: "none", 
+   x: 1750, 
+   rotation: 0, 
+   ease: "bounce", 
    paused: true
  });
 
