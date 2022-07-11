@@ -40,7 +40,25 @@ var tween4 = gsap.to(".reservoirpara", {
 //  gsap.to(".red", {rotation: 27, x: 100, duration: 1});
 
 //  document.querySelector("#joonist").onclick = () => tween.play();
- document.querySelector(".joonist").onclick = () => tween.restart();
+
+// Here are the functions
+
+function restartJ() {
+  j = document.getElementsByClassName("joonistpara");
+  u = document.getElementsByClassName("ukirinpara");
+  l = document.getElementsByClassName("lostpara");
+  r = document.getElementsByClassName("reservoirpara");
+
+  j.className ="z10";
+  u.className ="z5";
+  l.className ="z4";
+  r.className ="z3";
+  document.querySelector(".joonist").onclick = () => tween.restart();
+}
+
+
+// Above are the functions
+//  document.querySelector(".joonist").onclick = () => tween.restart();
 
 
  document.querySelector(".ukirin").onclick = () => tween2.restart();
