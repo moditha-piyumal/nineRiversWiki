@@ -52,7 +52,7 @@
 
       .bigcontainer {
          background-color: royalblue;
-         padding: 120px;
+         padding: 10vw;
       }
       .photocard {
          background-size: cover;
@@ -66,6 +66,73 @@
          border-radius: 10%;
          box-shadow: 0 25px 20px;
 
+      }
+
+      .threeButtons {
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         grid-gap: 10px;
+         padding: 20px;
+         border: solid;
+         border-width: 7px;
+         border-color: darksalmon;
+      }
+
+      .buttonForAnimation {
+         height: 100px;
+         background-color: bisque;
+         border-radius: 20%;
+      }
+      .buttonForAnimation:hover {
+         background-color: gray;
+      }
+
+      .relativeClass {
+         position: relative;
+      }
+
+      .movingDiv {
+         position: absolute;
+         /* left: -3000px; */
+         width: 80vw;
+         text-align: center;
+         color: aliceblue;
+         font-family: Arial, Helvetica, sans-serif;
+         padding-bottom: 50px;
+         left: -3000px;
+      }
+      .zmovingDiv3 {
+         position: absolute;
+         /* left: -3000px; */
+         width: 80vw;
+         text-align: center;
+         color: aliceblue;
+         font-family: Arial, Helvetica, sans-serif;
+         padding-bottom: 50px;
+         left: -3000px;
+         z-index: 3;
+      }
+      .zmovingDiv2 {
+         position: absolute;
+         /* left: -3000px; */
+         width: 80vw;
+         text-align: center;
+         color: aliceblue;
+         font-family: Arial, Helvetica, sans-serif;
+         padding-bottom: 50px;
+         left: -3000px;
+         z-index: 2;
+      }
+      .zmovingDiv1 {
+         position: absolute;
+         /* left: -3000px; */
+         width: 80vw;
+         text-align: center;
+         color: aliceblue;
+         font-family: Arial, Helvetica, sans-serif;
+         padding-bottom: 50px;
+         left: -3000px;
+         z-index: 1;
       }
       
 
@@ -116,6 +183,29 @@
       <div class="photocard" data-tilt>
          <!-- <img src="css/city.jpg"> -->
       </div>
+   </div>
+
+
+   <div class="bigcontainer relativeClass">
+      <div class="threeButtons">
+         <button id="buttonAid" class="buttonForAnimation buttonA"></button>
+         <button id="buttonBid" class="buttonForAnimation buttonB"></button>
+         <button id="buttonCid" class="buttonForAnimation buttonC"></button>
+      </div>
+
+      <div id="a" class="movingDiv">
+         <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, sapiente?</h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat impedit aperiam totam hic placeat nihil officiis, magnam doloribus blanditiis tenetur reprehenderit ad asperiores sequi eaque corrupti architecto corporis ullam vero dolorem pariatur amet. Suscipit temporibus ex error molestiae optio dicta incidunt, natus ea voluptatibus labore, quia deserunt ipsam similique officiis hic necessitatibus rerum est voluptate ipsum sed mollitia maxime, recusandae repudiandae? Ut autem, cum architecto repellat deserunt nihil ipsam sequi possimus deleniti tempora reprehenderit laboriosam aperiam aliquam commodi, doloribus asperiores molestiae vel voluptatibus reiciendis corrupti nesciunt? Molestias autem aspernatur, temporibus ipsa voluptatum, nihil facere, deserunt odio magni nam provident mollitia?</p>
+      </div>
+      <div id="b" class="movingDiv">
+         <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, sapiente?</h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat impedit aperiam totam hic placeat nihil officiis, magnam doloribus blanditiis tenetur reprehenderit ad asperiores sequi eaque corrupti architecto corporis ullam vero dolorem pariatur amet. Suscipit temporibus ex error molestiae optio dicta incidunt, natus ea voluptatibus labore, quia deserunt ipsam similique officiis hic necessitatibus rerum est voluptate ipsum sed mollitia maxime, recusandae repudiandae? Ut autem, cum architecto repellat deserunt nihil ipsam sequi possimus deleniti tempora reprehenderit laboriosam aperiam aliquam commodi, doloribus asperiores molestiae vel voluptatibus reiciendis corrupti nesciunt? Molestias autem aspernatur, temporibus ipsa voluptatum, nihil facere, deserunt odio magni nam provident mollitia?</p>
+      </div>
+      <div id="c" class="movingDiv">
+         <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, sapiente?</h2>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat impedit aperiam totam hic placeat nihil officiis, magnam doloribus blanditiis tenetur reprehenderit ad asperiores sequi eaque corrupti architecto corporis ullam vero dolorem pariatur amet. Suscipit temporibus ex error molestiae optio dicta incidunt, natus ea voluptatibus labore, quia deserunt ipsam similique officiis hic necessitatibus rerum est voluptate ipsum sed mollitia maxime, recusandae repudiandae? Ut autem, cum architecto repellat deserunt nihil ipsam sequi possimus deleniti tempora reprehenderit laboriosam aperiam aliquam commodi, doloribus asperiores molestiae vel voluptatibus reiciendis corrupti nesciunt? Molestias autem aspernatur, temporibus ipsa voluptatum, nihil facere, deserunt odio magni nam provident mollitia?</p>
+      </div>
+      
    </div>
 
 
