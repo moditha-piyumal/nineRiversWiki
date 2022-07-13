@@ -99,7 +99,8 @@
          color: aliceblue;
          font-family: Arial, Helvetica, sans-serif;
          padding-bottom: 50px;
-         left: -3000px;
+         background-color:rgba(77, 94, 130, 1.0);
+         z-index: 1;
       }
       .zmovingDiv3 {
          position: absolute;
@@ -109,8 +110,9 @@
          color: aliceblue;
          font-family: Arial, Helvetica, sans-serif;
          padding-bottom: 50px;
-         left: -3000px;
+         /* left: -3000px; */
          z-index: 3;
+         background-color:rgba(238, 94, 130, 1);
       }
       .zmovingDiv2 {
          position: absolute;
@@ -120,8 +122,9 @@
          color: aliceblue;
          font-family: Arial, Helvetica, sans-serif;
          padding-bottom: 50px;
-         left: -3000px;
+         /* left: -3000px; */
          z-index: 2;
+         background-color:rgba(238, 100, 30, 1);
       }
       .zmovingDiv1 {
          position: absolute;
@@ -131,8 +134,9 @@
          color: aliceblue;
          font-family: Arial, Helvetica, sans-serif;
          padding-bottom: 50px;
-         left: -3000px;
+         /* left: -3000px; */
          z-index: 1;
+         background-color:rgba(208, 194, 230, 1);
       }
       
 
@@ -145,6 +149,9 @@
    </style>
 
 <link rel="stylesheet" type="text/css" href="css/homeicon.css">
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 
    
 </head>
@@ -188,21 +195,21 @@
 
    <div class="bigcontainer relativeClass">
       <div class="threeButtons">
-         <button id="buttonAid" class="buttonForAnimation buttonA"></button>
-         <button id="buttonBid" class="buttonForAnimation buttonB"></button>
-         <button id="buttonCid" class="buttonForAnimation buttonC"></button>
+         <button id="buttonAid" class="buttonForAnimation buttonA" onmouseup="zTopA()">A</button>
+         <button id="buttonBid" class="buttonForAnimation buttonB" onmouseup="zTopB()">B</button>
+         <button id="buttonCid" class="buttonForAnimation buttonC" onmouseup="zTopC()">C</button>
       </div>
 
       <div id="a" class="movingDiv">
-         <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, sapiente?</h2>
+         <h2>AAAAA, ipsum dolor sit amet consectetur adipisicing elit. Sunt, sapiente?</h2>
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat impedit aperiam totam hic placeat nihil officiis, magnam doloribus blanditiis tenetur reprehenderit ad asperiores sequi eaque corrupti architecto corporis ullam vero dolorem pariatur amet. Suscipit temporibus ex error molestiae optio dicta incidunt, natus ea voluptatibus labore, quia deserunt ipsam similique officiis hic necessitatibus rerum est voluptate ipsum sed mollitia maxime, recusandae repudiandae? Ut autem, cum architecto repellat deserunt nihil ipsam sequi possimus deleniti tempora reprehenderit laboriosam aperiam aliquam commodi, doloribus asperiores molestiae vel voluptatibus reiciendis corrupti nesciunt? Molestias autem aspernatur, temporibus ipsa voluptatum, nihil facere, deserunt odio magni nam provident mollitia?</p>
       </div>
       <div id="b" class="movingDiv">
-         <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, sapiente?</h2>
+         <h2>BBBBBBBBBB, ipsum dolor sit amet consectetur adipisicing elit. Sunt, sapiente?</h2>
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat impedit aperiam totam hic placeat nihil officiis, magnam doloribus blanditiis tenetur reprehenderit ad asperiores sequi eaque corrupti architecto corporis ullam vero dolorem pariatur amet. Suscipit temporibus ex error molestiae optio dicta incidunt, natus ea voluptatibus labore, quia deserunt ipsam similique officiis hic necessitatibus rerum est voluptate ipsum sed mollitia maxime, recusandae repudiandae? Ut autem, cum architecto repellat deserunt nihil ipsam sequi possimus deleniti tempora reprehenderit laboriosam aperiam aliquam commodi, doloribus asperiores molestiae vel voluptatibus reiciendis corrupti nesciunt? Molestias autem aspernatur, temporibus ipsa voluptatum, nihil facere, deserunt odio magni nam provident mollitia?</p>
       </div>
       <div id="c" class="movingDiv">
-         <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, sapiente?</h2>
+         <h2>CCCCCCCCC, ipsum dolor sit amet consectetur adipisicing elit. Sunt, sapiente?</h2>
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat impedit aperiam totam hic placeat nihil officiis, magnam doloribus blanditiis tenetur reprehenderit ad asperiores sequi eaque corrupti architecto corporis ullam vero dolorem pariatur amet. Suscipit temporibus ex error molestiae optio dicta incidunt, natus ea voluptatibus labore, quia deserunt ipsam similique officiis hic necessitatibus rerum est voluptate ipsum sed mollitia maxime, recusandae repudiandae? Ut autem, cum architecto repellat deserunt nihil ipsam sequi possimus deleniti tempora reprehenderit laboriosam aperiam aliquam commodi, doloribus asperiores molestiae vel voluptatibus reiciendis corrupti nesciunt? Molestias autem aspernatur, temporibus ipsa voluptatum, nihil facere, deserunt odio magni nam provident mollitia?</p>
       </div>
       
@@ -217,19 +224,49 @@
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    
 
     <!-- This is the GSAP engine cdn. -->
 
 
 
-    <script>
+    <script type="text/javascript">
 
-      gsap.to(".card", {rotation: 360, duration: 3});
+      // gsap.to(".card", {rotation: 360, duration: 3});
+
+      function zTopA() {
+         a = document.getElementById("a");
+         b = document.getElementById("b");
+         c = document.getElementById("c");
+
+         a.className ="zmovingDiv3";
+         b.className ="zmovingDiv2";
+         c.className ="zmovingDiv1";
+      }
+      function zTopB() {
+         a = document.getElementById("a");
+         b = document.getElementById("b");
+         c = document.getElementById("c");
+
+         a.className ="zmovingDiv2";
+         b.className ="zmovingDiv3";
+         c.className ="zmovingDiv1";
+      }
+      function zTopC() {
+         a = document.getElementById("a");
+         b = document.getElementById("b");
+         c = document.getElementById("c");
+
+         a.className ="zmovingDiv1";
+         b.className ="zmovingDiv2";
+         c.className ="zmovingDiv3";
+      }
 
       // This is the GSAP script. We linked GSAP above and this is an internal javascript script.
 
     </script>
+
+
 
 
 
