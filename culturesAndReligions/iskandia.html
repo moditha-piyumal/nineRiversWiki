@@ -7,6 +7,8 @@
    <title>Iskandia</title>
    <style>
 
+      /* This is the css style for this page. We will attempt to stay on a single page for Iskandia. This page should be the only page. We will also try adding a javascript code here. */
+
       body {
          background-color: royalblue;
       }
@@ -79,6 +81,9 @@
 
    
 </head>
+
+
+<!-- The following parts indicate the html code for this page. We are using javascript codes in the script below. -->
 <body>
 
    <div class="container">
@@ -114,8 +119,27 @@
    </div>
 
 
+   
+
+
     <!-- home icon -->
     <a href="../nineRiversHome.html" id="homeicon"></a>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
+    <!-- This is the GSAP engine cdn. -->
+
+
+
+    <script>
+
+      gsap.to(".card", {rotation: 360, duration: 3});
+
+      // This is the GSAP script. We linked GSAP above and this is an internal javascript script.
+
+    </script>
 
 
 
