@@ -11,6 +11,8 @@
 
       body {
          background-color: royalblue;
+         padding: 0;
+         margin: 0;
       }
       .container {
          display: grid;
@@ -52,7 +54,7 @@
 
       .bigcontainer {
          background-color: royalblue;
-         padding: 10vw;
+         padding: 0vw;
       }
       .photocard {
          background-size: cover;
@@ -65,6 +67,7 @@
          border: solid 5px rosybrown;
          border-radius: 10%;
          box-shadow: 0 25px 20px;
+         margin: 10vw;
 
       }
 
@@ -76,6 +79,8 @@
          border: solid;
          border-width: 7px;
          border-color: darksalmon;
+         margin: 0;
+         box-sizing: border-box;
       }
 
       .buttonForAnimation {
@@ -93,8 +98,8 @@
 
       .movingDiv {
          position: absolute;
-         /* left: -3000px; */
-         width: 80vw;
+         left: -3000px;
+         width: 100vw;
          text-align: center;
          color: aliceblue;
          font-family: Arial, Helvetica, sans-serif;
@@ -105,37 +110,43 @@
       .zmovingDiv3 {
          position: absolute;
          /* left: -3000px; */
-         width: 80vw;
+         width: 100%;
+         margin: 0;
+         padding: 10px;
          text-align: center;
          color: aliceblue;
          font-family: Arial, Helvetica, sans-serif;
          padding-bottom: 50px;
-         /* left: -3000px; */
+         left: -3020px;
          z-index: 3;
          background-color:rgba(238, 94, 130, 1);
       }
       .zmovingDiv2 {
          position: absolute;
          /* left: -3000px; */
-         width: 80vw;
+         width: 100%;
          text-align: center;
          color: aliceblue;
          font-family: Arial, Helvetica, sans-serif;
          padding-bottom: 50px;
-         /* left: -3000px; */
+         left: -3020px;
          z-index: 2;
+         padding: 10px;
+         margin: 0;
          background-color:rgba(238, 100, 30, 1);
       }
       .zmovingDiv1 {
          position: absolute;
          /* left: -3000px; */
-         width: 80vw;
+         width: 100%;
          text-align: center;
          color: aliceblue;
          font-family: Arial, Helvetica, sans-serif;
          padding-bottom: 50px;
-         /* left: -3000px; */
+         left: -3020px;
          z-index: 1;
+         margin: 0;
+         padding: 10px;
          background-color:rgba(208, 194, 230, 1);
       }
       
@@ -234,6 +245,28 @@
 
       // gsap.to(".card", {rotation: 360, duration: 3});
 
+      var tween1 = gsap.to("#a", {
+  duration: 4, 
+  x: 3000, 
+  rotation: 0, 
+  ease: "none", 
+  paused: true
+});
+      var tween2 = gsap.to("#b", {
+  duration: 4, 
+  x: 3000, 
+  rotation: 0, 
+  ease: "none", 
+  paused: true
+});
+      var tween3 = gsap.to("#c", {
+  duration: 4, 
+  x: 3000, 
+  rotation: 0, 
+  ease: "none", 
+  paused: true
+});
+
       function zTopA() {
          a = document.getElementById("a");
          b = document.getElementById("b");
@@ -242,6 +275,8 @@
          a.className ="zmovingDiv3";
          b.className ="zmovingDiv2";
          c.className ="zmovingDiv1";
+
+         document.querySelector("#buttonAid").onclick = () => tween1.restart();
       }
       function zTopB() {
          a = document.getElementById("a");
@@ -251,6 +286,8 @@
          a.className ="zmovingDiv2";
          b.className ="zmovingDiv3";
          c.className ="zmovingDiv1";
+
+         document.querySelector("#buttonBid").onclick = () => tween2.restart();
       }
       function zTopC() {
          a = document.getElementById("a");
@@ -260,6 +297,8 @@
          a.className ="zmovingDiv1";
          b.className ="zmovingDiv2";
          c.className ="zmovingDiv3";
+
+         document.querySelector("#buttonCid").onclick = () => tween3.restart();
       }
 
       // This is the GSAP script. We linked GSAP above and this is an internal javascript script.
