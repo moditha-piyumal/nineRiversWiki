@@ -105,7 +105,9 @@
          font-family: Arial, Helvetica, sans-serif;
          padding-bottom: 50px;
          background-color:rgba(77, 94, 130, 1.0);
-         z-index: 1;
+         z-index: 0;
+         padding: 10px;
+         margin: 0%;
       }
       .zmovingDiv3 {
          position: absolute;
@@ -120,6 +122,7 @@
          left: -3020px;
          z-index: 3;
          background-color:rgba(238, 94, 130, 1);
+         min-height: 300px;
       }
       .zmovingDiv2 {
          position: absolute;
@@ -134,6 +137,7 @@
          padding: 10px;
          margin: 0;
          background-color:rgba(238, 100, 30, 1);
+         min-height: 300PX;
       }
       .zmovingDiv1 {
          position: absolute;
@@ -148,6 +152,7 @@
          margin: 0;
          padding: 10px;
          background-color:rgba(208, 194, 230, 1);
+         min-height: 300PX;
       }
       
 
@@ -248,21 +253,21 @@
       var tween1 = gsap.to("#a", {
   duration: 4, 
   x: 3000, 
-  rotation: 0, 
+//   rotation: 0, 
   ease: "none", 
   paused: true
 });
       var tween2 = gsap.to("#b", {
   duration: 4, 
   x: 3000, 
-  rotation: 0, 
+//   rotation: 0, 
   ease: "none", 
   paused: true
 });
       var tween3 = gsap.to("#c", {
   duration: 4, 
   x: 3000, 
-  rotation: 0, 
+//   rotation: 0, 
   ease: "none", 
   paused: true
 });
@@ -273,8 +278,8 @@
          c = document.getElementById("c");
 
          a.className ="zmovingDiv3";
-         b.className ="zmovingDiv2";
-         c.className ="zmovingDiv1";
+         b.className ="zmovingDiv1";
+         c.className ="zmovingDiv2";
 
          document.querySelector("#buttonAid").onclick = () => tween1.restart();
       }
@@ -312,5 +317,7 @@
 
 
    <script type="text/javascript" src="vanilla-tilt.js"></script>
+
+   <!-- I cannot figure out why there is a height problem arising when I enter the js code with the onclick event. We will stiop here for this page and try somewhere else. -->
 </body>
 </html>
