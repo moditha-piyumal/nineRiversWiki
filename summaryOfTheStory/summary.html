@@ -9,9 +9,7 @@
    <script src="https://cdn.tailwindcss.com"></script>
    <!-- Above is the tailwind script. We will try combining a few scripts. We know tailwind and js className assigning does not work. We can use some other mechnism like an animation of parts of the page flying around to get them to certain places. -->
 
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Observer.min.js"></script>
-   <!-- These are Gsap scripts. The observer is going to help you scroll through images in a nice methodical way. The normal Gsap script will help you do the bare minimum animations. But, thistime, you will use the documentation a little bit than the last time.  -->
+   
 
 
 
@@ -26,7 +24,29 @@
    <!-- Emerald-900 , sky-800 , blue-50 , orange-500 -->
 
    <section class="bg-emerald-900 h-[200px] relative">
-      <div class="h-[30px] w-[30px] bg-orange-500 rounded-lg absolute left-10 top-20"></div>
+      <div id="a" class="h-[30px] w-[30px] bg-orange-500 rounded-lg absolute left-4 top-16"></div>
+      <div id="b" class="h-[30px] w-[30px] bg-orange-500 rounded-lg absolute left-16 top-24"></div>
+      <div id="c" class="h-[30px] w-[30px] bg-orange-500 rounded-lg absolute left-10 top-4"></div>
+      <div id="d" class="h-[30px] w-[30px] bg-orange-500 rounded-lg absolute left-16 top-40"></div>
+      <div id="e" class="h-[30px] w-[30px] bg-orange-500 rounded-lg absolute left-4 top-32"></div>
+
+      <div id="f" class="h-[30px] w-[30px] bg-blue-50 rounded-lg absolute right-4 top-16"></div>
+      <div id="g" class="h-[30px] w-[30px] bg-blue-50 rounded-lg absolute right-16 top-24"></div>
+      <div id="h" class="h-[30px] w-[30px] bg-blue-50 rounded-lg absolute right-10 top-4"></div>
+      <div id="i" class="h-[30px] w-[30px] bg-blue-50 rounded-lg absolute right-16 top-40"></div>
+      <div id="j" class="h-[30px] w-[30px] bg-blue-50 rounded-lg absolute right-4 top-32"></div>
+
+
+
+      <div id="k" class="h-[10px] w-[10px] bg-orange-500 rounded-lg absolute right-32 top-40"></div>
+      <div id="l" class="h-[10px] w-[10px] bg-orange-500 rounded-lg absolute right-32 top-24"></div>
+      <div id="m" class="h-[10px] w-[10px] bg-orange-500 rounded-lg absolute right-32 top-6"></div>
+
+      <div id="n" class="h-[10px] w-[10px] bg-blue-50 rounded-lg absolute left-32 top-40"></div>
+      <div id="o" class="h-[10px] w-[10px] bg-blue-50 rounded-lg absolute left-32 top-24"></div>
+      <div id="p" class="h-[10px] w-[10px] bg-blue-50 rounded-lg absolute left-32 top-6"></div>
+
+      
 
    </section>
 
@@ -42,6 +62,17 @@
    <section class="bg-orange-500 h-[50px]"></section>
    <section class="bg-sky-800 h-[200px]"></section>
    <section class="bg-orange-500 h-[50px]"></section>
+
+
+
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/Observer.min.js"></script>
+
+   <script type="text/javascript" src="summary.js"></script>
+
+   
+   <!-- These are Gsap scripts. The observer is going to help you scroll through images in a nice methodical way. The normal Gsap script will help you do the bare minimum animations. But, thistime, you will use the documentation a little bit than the last time.  -->
 
 
    
