@@ -28,8 +28,11 @@ gsap.from("#o", {x: -1000, duration: 8});
 gsap.to("#o", {x: 2000, duration: 4, delay: 8});
 
 
-gsap.from("#p", {x: -1000, duration: 9}),
+gsap.from("#p", {x: -1000, duration: 9});
 gsap.to("#p", {x: 2000, duration: 3, delay: 9});
+
+
+gsap.fromTo("#title", {opacity: 0}, {opacity: 1, duration: 10});
 
 
 
