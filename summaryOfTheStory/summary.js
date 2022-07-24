@@ -48,4 +48,5 @@ gsap.fromTo("#title", {opacity: 0, scale: 0}, {opacity: 1, scale: 1, duration: 1
 
 
 
-
+gsap.from(".sumBox1", {x: -1000, y: 2000, duration: 6, ease: "bounce"});
+gsap.from(".sumBox2", {x: 1000,y: 2000, duration: 6, ease: "bounce"});
