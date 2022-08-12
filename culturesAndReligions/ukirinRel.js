@@ -22,4 +22,4 @@ function anim() {
    }, halftime)
 }
 
-setInterval(anim, fulltime);
+setInterval(anim, 7000);
