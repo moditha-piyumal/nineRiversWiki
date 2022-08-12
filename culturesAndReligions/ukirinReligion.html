@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Religion of the Ukirins</title>
+
+
+   <style type="text/css">
+
+      body {
+         margin: 0;
+         padding: 0;
+      }
+
+      .container {
+         width: 100vw;
+         height: 80vh;
+         background-color: crimson;
+         position: relative;
+      }
+
+      #box {
+         width: 200px;
+         height: 200px;
+         background-color: darksalmon;
+         position: absolute;
+         right: -80px;
+         top: 100px;
+         border-radius: 50%;
+
+      }
+
+
+      #box1 {
+         width: 200px;
+         height: 200px;
+         background-color: darksalmon;
+         position: absolute;
+         left: -50px;
+         top: 300px;
+         border-radius: 50%;
+
+      }
+
+      .grow {
+         animation: grow 3s linear forwards;
+      }
+
+      .shrink {
+         animation: shrink 3s linear forwards;
+      }
+
+
+      @keyframes grow {
+   from {
+      transform: scale(1);
+   }
+   to {
+      transform: scale(1.2);
+   }
+}
+
+@keyframes shrink {
+   from {
+      transform: scale(1.2);
+   }
+   to {
+      transform: scale(1);
+   }
+}
+
+   </style>
+</head>
+<body>
+
+   <div class="container">
+
+      <div id="box">
+
+      </div>
+
+      <div id="box1">
+
+      </div>
+
+   </div>
+
+   <script type="text/javascript" src="ukirinRel.js"></script>
+   
+</body>
+</html>
