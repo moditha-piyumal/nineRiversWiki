@@ -23,3 +23,34 @@ function anim() {
 }
 
 setInterval(anim, 7000);
+
+// The following boxes are anim ated in a different rhythem.
+
+var box2 = document.querySelector('#box2');
+var box3 = document.querySelector('#box3');
+
+anim2()
+
+function anim2() {
+
+   box2.className = 'grow2'
+
+   setTimeout(() => {
+      box2.className = 'shrink2'
+   }, 2000)
+}
+
+setInterval(anim2, 4500);
+
+anim3()
+
+function anim3() {
+
+   box3.className = 'grow3'
+
+   setTimeout(() => {
+      box3.className = 'shrink3'
+   }, 5000)
+}
+
+setInterval(anim3, 9500);
