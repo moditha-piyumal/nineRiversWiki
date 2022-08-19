@@ -2,3 +2,15 @@
    margin: 0;
    padding: 0;
 }
+
+#homeicon {
+   position: fixed;
+   right: 30px;
+   bottom: 70px;
+   width: 50px;
+   height: 50px;
+   background-image: url(../../homeicon.png);
+   background-size: cover;
+   z-index: 2;
+   border-radius: 50%;
+}
